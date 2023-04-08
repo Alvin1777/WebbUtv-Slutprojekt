@@ -5,6 +5,10 @@ h1{
     text-align: center;
 }
 
+h2{
+    text-align: center;
+}
+
 header{
     background-image: url('NYC-banner.jpg');
     height: 15em;
@@ -92,17 +96,17 @@ li a:hover {
 
 
 .Welcome-page{
-    height: 100vh;
+    height: 125vh;
     width: 98.5vw;
     position: relative;
     max-width: 100%;
     margin: 0;
     padding: 0;
     text-align: center;
-    font-size: 4em;
+    font-size: 2em;
     border: solid aqua 3px;
-    background-color: white;
-    color: black;
+    background-image: url("JuveVBarcaCL.jpeg");
+    color: gold;
 }
 
 
@@ -127,15 +131,6 @@ li a:hover {
 #TopBox-smaller-text{
     font-size: 2em;
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -190,7 +185,15 @@ img:hover {
 
 
 
+.squadTable{
+    text-align: center;
+}
 
+table, th, td{
+    margin-left: 32.5vw;
+    padding: 5px;
+    border: solid 1px;
+}
 
 
 
