@@ -50,6 +50,17 @@ h1, p {
     color: black;
 }
 
+/* Page Transitions */
+.page-transition {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }  
+
+  
+/* End Page Transitions */
+
+
+
 /* Navigation */
 
 header {
