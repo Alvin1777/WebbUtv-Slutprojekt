@@ -1,0 +1,251 @@
+
+
+
+*,*::after,*::before {
+    box-sizing: border-box;
+    font-weight: 400;
+    color: gold;
+}
+
+body {
+    background-image: linear-gradient(to right, black , white);
+    margin: 0;
+    background-repeat: no-repeat;
+    font-size: 1.4em;
+} 
+
+.JuveLogoSmall {
+    width: 10px;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1, p {
+    margin: 0;
+}
+
+.row {
+    display: flex;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;    
+}
+
+  
+
+
+
+header {
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 1.5em 0;
+}
+
+.logo {
+    align-items: center;
+}
+
+.logo img {
+    max-width: 35px;
+}
+
+.logo h1 {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+nav ul {
+    gap: 2em;
+    align-items: center;
+}
+
+nav a {
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+
+}
+
+nav a::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 3px;
+    margin: 0 auto;
+    background-color: aqua;
+    border-radius: 5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+nav li:nth-of-type(5) a::after {
+    all: unset;
+}
+
+nav a:hover::after {
+    width: 30px;   
+}
+
+nav li:nth-of-type(5) a {
+    padding: 0.5em 1em;
+    background-color: gray;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+nav li:nth-last-of-type(5) a:hover, .hero a:hover {
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*End Navigation*/
+
+/* Hero */
+
+.hero {
+    gap: 2em;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    min-height: calc(100vh - 93.6px);
+}
+
+.hero>* {
+    flex: 1 1 25em;
+}
+
+.hero h1 {
+    font-weight: 700;
+    font-size: clamp(40px, 5vw, 70px);
+    line-height: 1;
+}
+
+.hero p {
+    font-weight: 500;
+    font-size: 30px;
+    padding: 1em 0;
+}
+
+.hero a {
+    font-weight: 700;
+    font-size: 20px;
+    padding: 0.3em 1em;
+    background-color: red;
+    border-radius: 10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+/* End Hero */
+
+/* Footer */
+
+
+
+/* End Footer */
+
+/* Media */
+
+@media screen and (max-width:900px) {
+    .toggleMenu {
+        color:red;
+        position: absolute;
+        right: 5%;
+        background-image: url("/WebbUtv-Slutprojekt/images/openMenu.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        width: 30px;
+        height: 30px;
+        padding: 2em;
+        z-index: 1000;
+        transition: background-size 0.3s ease-in-out;
+        -webkit-transition: background-size 0.3s ease-in-out;
+        -moz-transition: background-size 0.3s ease-in-out;
+        -ms-transition: background-size 0.3s ease-in-out;
+        -o-transition: background-size 0.3s ease-in-out;
+    }
+
+    .toggleMenu.active {
+        color: red ;
+        position: fixed;
+        background-image: url();
+        background-size: 25px;
+    }
+
+    .navigation{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-height: 0;
+        opacity: 0;
+        transform-origin: top;
+        transform: scale(1, 0);
+        -webkit-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -o-transform: scale(1,1);
+    }
+
+    .navigation.active{
+        position: fixed;
+        inset: 0;
+        margin: auto;
+        max-height: 100%;
+        opacity: 1;
+        background-color: rgba(63, 0, 156, 1);
+        transform: scale(1, 1);
+        -webkit-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -o-transform: scale(1,1);
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+}
+
+/* End Media */
+

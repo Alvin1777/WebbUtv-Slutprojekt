@@ -10,7 +10,7 @@ h2{
 }
 
 header{
-    background-image: url('JuventusStadiumBanner.jpg');
+    background-image: url('/WebbUtv-Slutprojekt/images/JuventusStadiumBanner.jpg');
     height: 15em;
     margin-left: 0;
     background-size: cover;
@@ -106,7 +106,7 @@ li a:hover {
     text-align: center;
     font-size: 2em;
     border: solid aqua 3px;
-    background-image: url("JuveVBarcaCL.jpeg");
+    background-image: url("/WebbUtv-Slutprojekt/images/JuveVBarcaCL.jpeg");
     color: gold;
 }
 
@@ -139,7 +139,7 @@ li a:hover {
 
 .block-parent{
     padding: 2rem;
-    height: 100vh;
+    border: aqua solid 3px;
 }
 
 .block{
@@ -287,3 +287,6 @@ footer{
     transform: scale(1.2);
     background-color: aqua;
 }
+
+
+
