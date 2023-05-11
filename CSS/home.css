@@ -134,6 +134,19 @@ nav li:nth-last-of-type(5) a:hover, .hero a:hover {
     box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+#accountLink {
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+#accountLink:hover{
+    background-color: black;
+    color: azure;
+}
+
 /*End Navigation*/
 
 /* Hero */
@@ -143,6 +156,12 @@ nav li:nth-last-of-type(5) a:hover, .hero a:hover {
     flex-wrap: wrap-reverse;
     align-items: center;
     min-height: calc(100vh - 93.6px);
+}
+
+#heroText {
+    font-size: 1em;
+    margin: 0;
+    padding: 0.3em;
 }
 
 .hero>* {
@@ -165,7 +184,8 @@ nav li:nth-last-of-type(5) a:hover, .hero a:hover {
     font-weight: 700;
     font-size: 20px;
     padding: 0.3em 1em;
-    background-color: red;
+    background-color: azure;
+    color: black;
     border-radius: 10px;
     -webkit-border-radius:10px;
     -moz-border-radius:10px;
@@ -178,7 +198,101 @@ nav li:nth-last-of-type(5) a:hover, .hero a:hover {
     -o-transition: 0.3s ease-in-out;
 }
 
+.hero a:hover {
+    background-color: red;
+    color: gold;
+    -webkit-transform:scale(1.2);
+    transform: scale(1.2);
+}
+
 /* End Hero */
+
+/* Blocks */
+
+.block-parent{
+    padding: 2rem;
+    border: aqua solid 3px;
+}
+
+.block{
+    display: inline-block;
+    padding: 1rem;
+}
+
+#block-right{
+    position: absolute;
+    right: 5vw;
+}
+
+#block-left{
+    top: 2px;
+    width: 45vw;
+    font-size: 1.5em;
+    color: rgb(7, 7, 81);
+    margin-left: 3vw;
+}
+
+#block-bottom{
+    position: absolute;
+    margin-left: 3vw;
+    font-size: 1.5em;
+    color: rgb(7, 7, 81);
+    margin-top: 20vh;
+    width: 45vw;
+}
+
+/* End Blocks*/
+
+/* Account Form */
+
+.accountForm {
+    margin: auto;
+    background-color: rgb(69, 75, 27);
+    border: solid 1px;
+    width: 35%;
+    border-radius: 5%;
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding-bottom: 4vh;
+}
+
+
+.formInput  {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#formInputDate {
+    cursor: pointer;
+}
+
+.formInputButton {
+    width: 40%;
+    background-color: gold;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formInputButton:hover {
+    -webkit-transform:scale(1.2);
+    transform: scale(1.2);
+    background-color: aqua;
+}
+
+/* End Account Form */
+
+
 
 /* Footer */
 
@@ -193,7 +307,7 @@ nav li:nth-last-of-type(5) a:hover, .hero a:hover {
         color:red;
         position: absolute;
         right: 5%;
-        background-image: url("/WebbUtv-Slutprojekt/images/openMenu.png");
+        background-image: url("./WebbUtv-Slutprojekt/images/openMenu.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: 30px;
