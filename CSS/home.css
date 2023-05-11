@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
 
 
 *,*::after,*::before {
@@ -11,12 +11,10 @@ body {
     background-image: linear-gradient(to right, black , white);
     margin: 0;
     background-repeat: no-repeat;
-    font-size: 1.4em;
+    font-size: 1.3em;
+    font-family: 'IBM Plex Serif', serif;
 } 
 
-.JuveLogoSmall {
-    width: 10px;
-}
 
 img {
     max-width: 100%;
@@ -47,9 +45,12 @@ h1, p {
     margin: 0 auto;    
 }
 
-  
+.menuRow {
+    font-size: 1.15em;
+    color: black;
+}
 
-
+/* Navigation */
 
 header {
     align-items: center;
