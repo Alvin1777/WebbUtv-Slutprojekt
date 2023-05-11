@@ -10,9 +10,10 @@ h2{
 }
 
 header{
-    background-image: url('NYC-banner.jpg');
+    background-image: url('JuventusStadiumBanner.jpg');
     height: 15em;
     margin-left: 0;
+    background-size: cover;
 }
 
 .head{
@@ -147,7 +148,6 @@ li a:hover {
 }
 
 #block-right{
-    width: 30vw;
     position: absolute;
     right: 5vw;
 }
@@ -172,13 +172,24 @@ li a:hover {
 
 
 
-img {
+.animatedImage {
     transition:transform 0.5s ease;
 }
 
-img:hover {
+.animatedImage:hover {
     -webkit-transform:scale(1.2); 
     transform:scale(1.2);
+}
+
+
+.teamphoto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#JTCPhoto{
+    height: 50vh;
 }
 
 
@@ -187,6 +198,7 @@ img:hover {
 
 .squadTable{
     text-align: center;
+    margin-bottom: 5vh;
 }
 
 table, th, td{
@@ -231,16 +243,47 @@ footer{
 }
 
 
+.accountForm {
+    margin: auto;
+    background-color: azure;
+    border: solid 1px;
+    width: 35%;
+    border-radius: 5%;
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding-bottom: 4vh;
+}
 
 
+.formInput  {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 
+#formInputDate {
+    cursor: pointer;
+}
 
+.formInputButton {
+    width: 40%;
+    background-color: gold;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-
-
-
-
-
-
-
-
+.formInputButton:hover {
+    -webkit-transform:scale(1.2);
+    transform: scale(1.2);
+    background-color: aqua;
+}
