@@ -9,8 +9,6 @@ function toggleMenu(){
 // End Navigation
 
 
-
-
 // Page Transition
 
 window.onload = () => {
