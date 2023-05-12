@@ -359,11 +359,11 @@ footer {
 }
 
 #footer-list{
-    border: red solid 3px;
-    width: 35%;
-    margin-top: 5vh;
+    width: 30%;
+    margin-top: 1vh;
     margin-bottom: 5vh;
-    margin-left: 5%;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 1%;
     padding-right: 1%;
     color: gold;
@@ -377,8 +377,16 @@ footer {
 }
 
 .footer-link:hover{
-    transform: scale(1.2);
+    transform: scale(1.5);
     color: aqua;
+}
+
+.copyrightText {
+    color: black;
+    font-size: 0.75em;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
 }
 
 
