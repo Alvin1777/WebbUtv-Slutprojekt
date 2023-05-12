@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="./CSS/main.css">
-        <link rel="shortcut icon" href="nyc-logo.jpg">
+        <link rel="stylesheet" href="./CSS/home.css">
+        <link rel="stylesheet" href="./CSS/PageTransitions.css">
+        <link rel="shortcut icon" href="">
         <title>Juventus</title>
         <script src="https://kit.fontawesome.com/83a377e60c.js" crossorigin="anonymous"></script>
-        
+        <script src="main.js"></script>
     </head>
     
 
     <body>
-        <header>
-            <a href="welcomePage.html"><h1 class="head">Header</h1></a>
+
+        <div class="transition transition3 is-active">
+            <img id="loading-screen" src="./images/JuveLoadingScreen.png" alt="Juventus Logo Loading Screen">
+        </div>
+
+        <header class="row container">
+            <a href="" class="logo row">
+                <img src="./images/JuveLogoWhite.png" alt="Juve Logo">
+                <h1>Juventus</h1>
+            </a>
+            <div class="toggleMenu" onclick="toggleMenu();"></div>
+            <nav class="navigation row">
+                <ul class="row">
+                    <li><a class="menuRow" href="home.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li ><a class="menuRow" href="theTeam.html"><i class="fa-solid fa-people-group"></i>The Team</a></li>
+                    <li ><a class="menuRow" href="theClub.html"><i class="fa-regular fa-futbol"></i>The Club</a></li>
+                    <li><a class="menuRow" href=""><i class="fa-solid fa-bullhorn"></i>The Fans</a></li>
+                    <li><a id="accountLink" class="menuRow" href="createAccount.html"><i class="fa-brands fa-mandalorian"></i>Your Account</a></li>
+                </ul>
+            </nav>
         </header>
 
-        <ul class="topnav">
-            <li><a href="home.html"><i class="fa-solid fa-house"></i>Home</a></li>
-            <li><a class="active" href="team.html"><i class="fa-solid fa-circle-info"></i>The Team</a></li>
-            <li><a href="club.html"><i class="fa-solid fa-map-location-dot"></i>The Club</a></li>
-            <li><a href=""><i class="fa-brands fa-mandalorian"></i>The Fans</a></li>
-            <li> 
-                <a class="log-in-page" href="accountPage.html"><i class="fa-solid fa-user"></i>Your Club Profile</a>
-            </li>
-        </ul>
-      
-        <form>
-            <input class="searchbar" type="text" placeholder="Search...">
-        </form>
         <main>
 
-            <h1>Our Team</h1>
-            <h2>Team Photo</h2>
+            <h1 class="teamPageHeaders">Our Team</h1>
+            <h2 class="teamPageHeaders">Team Photo</h2>
             <div class="teamphoto">
                 <img  src="./images/JuventusTeamPhoto.jpg" alt="Photo of Juventus Team">
             </div>
-            <h2>The Squad</h2>
+            <h2 class="teamPageHeaders">The Squad</h2>
             <table class="squadTable">
                 <thead>
                     <tr>
@@ -241,13 +247,20 @@
             </table>
         </main>
 
+
         <footer>
-            <ul id="footer-list">
-                <li class="footer-list"><a href=""><i class="fa-brands fa-instagram fa-2x"></i>PLACEHOLDER</a></li>
-                <li class="footer-list"><a href=""><i class="fa-brands fa-facebook fa-2x"></i>PLACEHOLDER</a></li>
-                <li class="footer-list"><a href=""><i class="fa-sharp fa-solid fa-city fa-2x"></i>PLACEHOLDER</a></li>
-                <li class="footer-list"><a href=""><i class="fa-solid fa-globe fa-2x"></i>PLACEHOLDER</a></li>
-            </ul> 
+            <ul>
+                <li ><a href=""><i class="fa-brands fa-instagram fa-2x"></i>Juventus Official Instagram</a></li>
+                <li ><a href=""><i class="fa-brands fa-facebook fa-2x"></i>Juventus Official Facebook</a></li>
+                <li ><a href=""><i class="fa-sharp fa-solid fa-city fa-2x"></i>PLACEHOLDER</a></li>
+                <li ><a href=""><i class="fa-solid fa-globe fa-2x"></i>PLACEHOLDER</a></li>
+            </ul>
+            
+            
+            
         </footer>
+    
     </body>
+
+
 </html>

@@ -3,7 +3,7 @@
 
 *,*::after,*::before {
     box-sizing: border-box;
-    font-weight: 400;
+    /*font-weight: 400;*/
     color: gold;
 }
 
@@ -51,10 +51,7 @@ h1, p {
 }
 
 /* Page Transitions */
-.page-transition {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }  
+
 
   
 /* End Page Transitions */
@@ -79,7 +76,7 @@ header {
 }
 
 .logo h1 {
-    font-weight: 700;
+    /*font-weight: 700;*/
     font-size: 35px;
 }
 
@@ -89,7 +86,7 @@ nav ul {
 }
 
 nav a {
-    font-weight: 500;
+    /*font-weight: 500;*/
     font-size: 18px;
     transition: 0.3s ease-in-out;
     -webkit-transition: 0.3s ease-in-out;
@@ -180,7 +177,7 @@ nav li:nth-last-of-type(5) a:hover, .hero a:hover {
 }
 
 .hero h1 {
-    font-weight: 700;
+    /*font-weight: 700;*/
     font-size: clamp(40px, 5vw, 70px);
     line-height: 1;
 }
@@ -228,11 +225,13 @@ nav li:nth-last-of-type(5) a:hover, .hero a:hover {
 .block{
     display: inline-block;
     padding: 1rem;
+    border: aqua solid 3px;
 }
 
 #block-right{
     position: absolute;
     right: 5vw;
+    border: aqua solid 3px;
 }
 
 #block-left{
@@ -241,6 +240,7 @@ nav li:nth-last-of-type(5) a:hover, .hero a:hover {
     font-size: 1.5em;
     color: rgb(7, 7, 81);
     margin-left: 3vw;
+    border: aqua solid 3px;
 }
 
 #block-bottom{
@@ -253,6 +253,32 @@ nav li:nth-last-of-type(5) a:hover, .hero a:hover {
 }
 
 /* End Blocks*/
+
+/* SquadTable */
+.teamphoto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.squadTable{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vh;
+    background-color: azure;
+}
+
+table, th, td{
+    padding: 5px;
+    border: solid 1px;
+    color: black;
+}
+
+.teamPageHeaders{
+    text-align: center;
+}
+
+/*End SquadTable */
 
 /* Account Form */
 
@@ -304,6 +330,11 @@ nav li:nth-last-of-type(5) a:hover, .hero a:hover {
 /* End Account Form */
 
 
+/* Icons */
+
+    
+
+/* End Icons */
 
 /* Footer */
 
@@ -318,10 +349,10 @@ nav li:nth-last-of-type(5) a:hover, .hero a:hover {
         color:red;
         position: absolute;
         right: 5%;
-        background-image: url("./WebbUtv-Slutprojekt/images/openMenu.png");
+        background-image: url("../images/openMenu.png");
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 30px;
+        background-size: 80px;
         width: 30px;
         height: 30px;
         padding: 2em;
@@ -336,8 +367,8 @@ nav li:nth-last-of-type(5) a:hover, .hero a:hover {
     .toggleMenu.active {
         color: red ;
         position: fixed;
-        background-image: url();
-        background-size: 25px;
+        background-image: url('../images/closeMenu.png');
+        background-size: 45px;
     }
 
     .navigation{

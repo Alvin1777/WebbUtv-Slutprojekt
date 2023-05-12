@@ -182,30 +182,12 @@ li a:hover {
 }
 
 
-.teamphoto{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 #JTCPhoto{
     height: 50vh;
 }
 
 
-
-
-
-.squadTable{
-    text-align: center;
-    margin-bottom: 5vh;
-}
-
-table, th, td{
-    margin-left: 32.5vw;
-    padding: 5px;
-    border: solid 1px;
-}
 
 
 
