@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
 
+:root {
+    --armygreen: rgb(69, 75, 27);
+}
 
 *,*::after,*::before {
     box-sizing: border-box;
     /*font-weight: 400;*/
-    color: gold;
+    /*color: gold;*/
 }
 
 body {
-    background-image: linear-gradient(to right, black , white);
+    background-image: linear-gradient(to right, black, white);
     margin: 0;
     background-repeat: no-repeat;
     font-size: 1.3em;
@@ -49,6 +52,11 @@ h1, p {
     font-size: 1.15em;
     color: black;
 }
+
+.white-text {
+    color: white;
+}
+
 
 /* Page Transitions */
 
@@ -151,8 +159,9 @@ nav li:nth-last-of-type(5) a:hover, .hero a:hover {
 }
 
 #accountLink:hover{
-    background-color: black;
+    background-color: var(--armygreen);
     color: azure;
+    transform: scale(1.2);
 }
 
 /*End Navigation*/
@@ -188,7 +197,7 @@ nav li:nth-last-of-type(5) a:hover, .hero a:hover {
     padding: 1em 0;
 }
 
-.hero a {
+.hero-btn {
     font-weight: 700;
     font-size: 20px;
     padding: 0.3em 1em;
@@ -206,8 +215,8 @@ nav li:nth-last-of-type(5) a:hover, .hero a:hover {
     -o-transition: 0.3s ease-in-out;
 }
 
-.hero a:hover {
-    background-color: red;
+.hero-btn:hover {
+    background-color: var(--armygreen);
     color: gold;
     -webkit-transform:scale(1.2);
     transform: scale(1.2);
@@ -238,7 +247,7 @@ nav li:nth-last-of-type(5) a:hover, .hero a:hover {
     top: 2px;
     width: 45vw;
     font-size: 1.5em;
-    color: rgb(7, 7, 81);
+    color: white;
     margin-left: 3vw;
     border: aqua solid 3px;
 }
@@ -284,7 +293,7 @@ table, th, td{
 
 .accountForm {
     margin: auto;
-    background-color: rgb(69, 75, 27);
+    background-color: var(--armygreen);
     border: solid 1px;
     width: 35%;
     border-radius: 5%;
@@ -331,13 +340,43 @@ table, th, td{
 
 
 /* Icons */
-
-    
-
+.fa-award{
+    color: gold;
+}
+.fa-trophy{
+    color: gold;
+}
+.fa-medal{
+    color: gold;
+}
 /* End Icons */
+
 
 /* Footer */
 
+footer {
+    border-top: aqua solid 3px;
+}
+
+#footer-list{
+    border: red solid 3px;
+    width: 35%;
+    margin-bottom: 10vh;
+    margin-left: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.footer-list{
+    transition: 0.5s;
+    font-size: 1.3em;
+    padding: 5px;
+}
+
+.footer-list:hover{
+    transform: scale(1.1);
+    color: aqua;
+}
 
 
 /* End Footer */
