@@ -42,22 +42,6 @@ body{
     width: 100vw;
 }
 
-.searchbar{
-    background-color: lightgrey;
-    border: solid 3px black;
-    height: 3vh;
-    position: absolute;
-    right: 2vw;
-    top: 2vh;
-}
-
-.active{
-    color: gold;
-}
-#active{
-    color: gold;
-}
-
 
 
 
@@ -89,50 +73,6 @@ li a:hover {
   background-color: #111;
   color: gold;
 }
-
-.log-in-page{
-    position: absolute;
-    right: 3vw;
-}
-
-
-.Welcome-page{
-    height: 125vh;
-    width: 98.5vw;
-    position: relative;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-size: 2em;
-    border: solid aqua 3px;
-    background-image: url("/WebbUtv-Slutprojekt/images/JuveVBarcaCL.jpeg");
-    color: gold;
-}
-
-
-
-
-
-
-.TopBox{
-  height: 10vh;
-  width: 98.5vw;
-  position: relative;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-size: 2.5em;
-  border: solid aqua 3px;
-  background-color: black;
-  color: gold;
-}
-
-#TopBox-smaller-text{
-    font-size: 2em;
-}
-
 
 
 
@@ -186,89 +126,3 @@ li a:hover {
 #JTCPhoto{
     height: 50vh;
 }
-
-
-
-
-
-
-.footer-list:hover {
-    -webkit-transform:scale(1.2);
-    transform: scale(1.2);
-}
-
-
-#footer-list{
-    border: 0;
-    padding: 5px;
-    margin: 5px;
-}
-
-.footer-list{
-    font-size: 25px;
-    transition: 0.5s;
-}
-
-.footer-list{
-    float: none;
-}
-
-footer{
-    position: relative;
-    bottom: 0;
-    width: 98.55vw;
-    height: 45vh;
-    border: solid;
-    border-color: aqua;
-    color: gold;
-    overflow: hidden;
-}
-
-
-.accountForm {
-    margin: auto;
-    background-color: azure;
-    border: solid 1px;
-    width: 35%;
-    border-radius: 5%;
-    text-align: center;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    padding-bottom: 4vh;
-}
-
-
-.formInput  {
-    width: 80%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-#formInputDate {
-    cursor: pointer;
-}
-
-.formInputButton {
-    width: 40%;
-    background-color: gold;
-    color: black;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 10%;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.formInputButton:hover {
-    -webkit-transform:scale(1.2);
-    transform: scale(1.2);
-    background-color: aqua;
-}
-
-
-

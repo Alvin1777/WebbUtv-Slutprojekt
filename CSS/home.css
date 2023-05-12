@@ -361,20 +361,23 @@ footer {
 #footer-list{
     border: red solid 3px;
     width: 35%;
-    margin-bottom: 10vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     margin-left: 5%;
     padding-left: 1%;
     padding-right: 1%;
+    color: gold;
 }
 
-.footer-list{
+.footer-link{
+    color: gold;
     transition: 0.5s;
     font-size: 1.3em;
     padding: 5px;
 }
 
-.footer-list:hover{
-    transform: scale(1.1);
+.footer-link:hover{
+    transform: scale(1.2);
     color: aqua;
 }
 
