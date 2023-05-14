@@ -308,6 +308,12 @@ nav li:nth-last-of-type(5) a:hover, .hero a:hover {
     width: 45vw;
 }
 
+#JTCPhoto{
+    height: 40vh;
+    width: 40vw;
+}
+
+
 /* End Blocks*/
 
 /* SquadTable */
@@ -321,13 +327,22 @@ nav li:nth-last-of-type(5) a:hover, .hero a:hover {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5vh;
-    background-color: azure;
+    background-color: white;
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+
+tfoot {
+    background-color: var(--armygreen);
+    color: gold;
 }
 
 table, th, td{
     padding: 5px;
     border: solid 1px;
-    color: black;
 }
 
 .teamPageHeaders{
@@ -385,6 +400,21 @@ table, th, td{
 
 /* End Account Form */
 
+/* Fan-Page */
+
+.fanpage-text {
+    text-align: center;
+    color: gold;
+}
+
+#fanpage-loremIpsum {
+    background-color: var(--armygreen);
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* End Fan-Page */
 
 /* Icons */
 .fa-award{
@@ -441,7 +471,8 @@ footer {
 
 /* Media */
 
-@media screen and (max-width:900px) {
+@media screen and (max-width: 950px) {
+
     .toggleMenu {
         color:red;
         position: absolute;
@@ -499,6 +530,50 @@ footer {
     nav ul{
         flex-direction: column;
     }
+
+
+
+
+
+
+
+
+
+
+    /* Footer */
+
+footer {
+    border-top: aqua solid 3px;
+}
+
+#footer-list{
+    width: 30%;
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1%;
+    padding-right: 1%;
+    color: gold;
+}
+
+.footer-link{
+    color: gold;
+    font-size: 1.3em;
+    padding: 5px;
+}
+
+.copyrightText {
+    font-size: 0.75em;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+
+
+/* End Footer */
+
+
 }
 
 /* End Media */
