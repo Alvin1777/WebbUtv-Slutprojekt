@@ -8,8 +8,6 @@
 
 *,*::after,*::before {
     box-sizing: border-box;
-    /*font-weight: 400;*/
-    /*color: gold;*/
 }
 
 
@@ -121,7 +119,6 @@ h1 {
 
 
 /* Navigation */
-
 header {
     align-items: center;
     justify-content: space-between;
@@ -138,7 +135,6 @@ header {
 }
 
 .logo h1 {
-    /*font-weight: 700;*/
     font-size: 35px;
 }
 
@@ -219,6 +215,8 @@ nav li:nth-last-of-type(5) a:hover, .hero a:hover {
 
 /*End Navigation*/
 
+
+
 /* Hero */
 
 .hero {
@@ -229,7 +227,7 @@ nav li:nth-last-of-type(5) a:hover, .hero a:hover {
 }
 
 #heroText {
-    font-size: 1em;
+    font-size: 1.2em;
     margin: 0;
     padding: 0.3em;
 }
@@ -620,6 +618,4 @@ tr:nth-child(even){
 
 
 }
-
 /* End Media */
-
