@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 
 :root {
     --armygreen: rgb(69, 75, 27);
@@ -9,6 +11,7 @@
     /*font-weight: 400;*/
     /*color: gold;*/
 }
+
 
 body {
     background-image: linear-gradient(to right, black, white);
@@ -37,6 +40,10 @@ ul {
 
 h1, p {
     margin: 0;
+}
+
+h1 {    
+    font-family: 'Montserrat', sans-serif;
 }
 
 .row {
@@ -141,7 +148,6 @@ nav ul {
 }
 
 nav a {
-    /*font-weight: 500;*/
     font-size: 18px;
     transition: 0.3s ease-in-out;
     -webkit-transition: 0.3s ease-in-out;
@@ -233,7 +239,6 @@ nav li:nth-last-of-type(5) a:hover, .hero a:hover {
 }
 
 .hero h1 {
-    /*font-weight: 700;*/
     font-size: clamp(40px, 5vw, 70px);
     line-height: 1;
 }
@@ -269,6 +274,8 @@ nav li:nth-last-of-type(5) a:hover, .hero a:hover {
     transform: scale(1.2);
 }
 
+
+
 /* End Hero */
 
 /* Blocks */
@@ -299,15 +306,6 @@ nav li:nth-last-of-type(5) a:hover, .hero a:hover {
     border: aqua solid 3px;
 }
 
-#block-bottom{
-    position: absolute;
-    margin-left: 3vw;
-    font-size: 1.5em;
-    color: rgb(7, 7, 81);
-    margin-top: 20vh;
-    width: 45vw;
-}
-
 #JTCPhoto{
     height: 40vh;
     width: 40vw;
@@ -335,11 +333,6 @@ thead {
     color: white;
 }
 
-tfoot {
-    background-color: var(--armygreen);
-    color: gold;
-}
-
 table, th, td{
     padding: 5px;
     border: solid 1px;
@@ -349,6 +342,10 @@ table, th, td{
     text-align: center;
 }
 
+tr:nth-child(even){
+    background-color: #e4e4e4
+}
+
 /*End SquadTable */
 
 /* Account Form */
@@ -356,7 +353,6 @@ table, th, td{
 .accountForm {
     margin: auto;
     background-color: var(--armygreen);
-    border: solid 1px;
     width: 35%;
     border-radius: 5%;
     text-align: center;
@@ -430,13 +426,8 @@ table, th, td{
 
 
 /* Footer */
-
-footer {
-    border-top: aqua solid 3px;
-}
-
 #footer-list{
-    width: 30%;
+    justify-content: center;
     margin-top: 1vh;
     margin-bottom: 5vh;
     margin-left: auto;
@@ -444,13 +435,15 @@ footer {
     padding-left: 1%;
     padding-right: 1%;
     color: gold;
+    display: flex;
 }
 
 .footer-link{
     color: gold;
     transition: 0.5s;
     font-size: 1.3em;
-    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .footer-link:hover{
@@ -532,46 +525,98 @@ footer {
     }
 
 
+    /* SquadTable */
+    .squadTable{
+        overflow-x: auto;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        width: 100vw;
+    }
+    table, th, td{
+        padding: 0;
+        border: none;
+    }
+
+    .responsiveTable {
+        overflow-x: auto;
+    }
+    /*End SquadTable */
 
 
+    /* Blocks */
+    .block-parent{
+        top: 0;
+        bottom: 0;
+        padding: 1rem;
+        border: none;
 
+    }
 
+    .block{
+        display: contents;
+        padding: 0;
+        border: none;
+    }
 
+    #block-right{
+        position: absolute;
+        right: 5vw;
+        width: 10%;
+        border: aqua solid 1px;
+    }
 
+    #block-left{
+        width: 100%;
+        border: none;
+    }
+    .google-map{
+        padding-bottom: 50%;
+        position: relative;
+        width: 100%;
+    }
+    #JTCPhoto{
+        width: 100%;
+    }
+
+    #AllianzPhoto{
+        width: 100%;
+    }
+    /* End Blocks*/
+
+        
+    /* Account Form */
+    .accountForm {
+        width: 90%;
+        margin-top: 5vh;
+        padding-bottom: 0;
+    }
+
+    .formInput  {
+        height: 4em;
+    }
+
+    .formInputButton {
+        width: 70%;
+    }
+    /* End Account Form */
 
 
     /* Footer */
+    #footer-list{
+        width: 90%;
+        margin-bottom: 3vh;
+        margin-top: 0vh;
+    }
 
-footer {
-    border-top: aqua solid 3px;
-}
+    .footer-link{
+        font-size: 1.5em;
+    }
 
-#footer-list{
-    width: 30%;
-    margin-top: 1vh;
-    margin-bottom: 5vh;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1%;
-    padding-right: 1%;
-    color: gold;
-}
-
-.footer-link{
-    color: gold;
-    font-size: 1.3em;
-    padding: 5px;
-}
-
-.copyrightText {
-    font-size: 0.75em;
-    text-align: center;
-    margin-top: 2vh;
-    margin-bottom: 1vh;
-}
-
-
-/* End Footer */
+    .copyrightText {
+        font-size: 0.8em;
+    }
+    /* End Footer */
 
 
 }

@@ -6,6 +6,7 @@
         <title>Juventus</title>
         <script src="https://kit.fontawesome.com/83a377e60c.js" crossorigin="anonymous"></script>
         <script src="main.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     </head>
     
 
@@ -18,7 +19,7 @@
         <header class="row container">
             <a href="#" class="logo row">
                 <img src="./images/JuveLogoWhite.png" alt="Juve Logo">
-                <h1 class="white-text">Juventus</h1>
+                <h1 id="siteTitle" class="white-text">Juventus</h1>
             </a>
             <div class="toggleMenu" onclick="toggleMenu();"></div>
             <nav class="navigation row">
@@ -40,224 +41,227 @@
                 <img  src="./images/JuventusTeamPhoto.jpg" alt="Photo of Juventus Team">
             </section>
             <h2 class="teamPageHeaders">The Squad</h2>
-            <table class="squadTable">
-                <thead>
-                    <tr>
-                        <th>Number</th>
-                        <th>Name</th>
-                        <th>Position</th>
-                        <th>Age</th>
-                        <th>Nationality</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>____</td><td>___________________</td><td>______________</td><td>____</td><td>__________</td></tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Wojciech Szczesny</td>
-                        <td>GK</td>
-                        <td>32</td>
-                        <td>Poland</td>
-                    </tr>
-                    <tr>
-                        <td>36</td>
-                        <td>Mattia Perin</td>
-                        <td>GK</td>
-                        <td>30</td>
-                        <td>Italy</td>
-                    </tr>
-                    <tr>
-                        <td>31</td>
-                        <td>Carlo Pinsoglio</td>
-                        <td>GK</td>
-                        <td>33</td>
-                        <td>Italy</td>
-                    </tr>
-                    <tr><td>____</td><td>___________________</td><td>______________</td><td>____</td><td>__________</td></tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Mattia De Sciglio</td>
-                        <td>RB/LB</td>
-                        <td>30</td>
-                        <td>Italy</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Gleison Bremer</td>
-                        <td>CB</td>
-                        <td>26</td>
-                        <td>Brazil</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>(VC)Danilo Luiz da Silva</td>
-                        <td>CB/RB/LB</td>
-                        <td>31</td>
-                        <td>Brazil</td>
-                    </tr>
-                    <tr>
-                        <td>12</td>
-                        <td>Alex Sandro</td>
-                        <td>LB/CB</td>
-                        <td>32</td>
-                        <td>Brazil</td>
-                    </tr>
-                    <tr>
-                        <td>15</td>
-                        <td>Federico Gatti</td>
-                        <td>CB</td>
-                        <td>24</td>
-                        <td>Italy</td>
-                    </tr>
-                    <tr>
-                        <td>19</td>
-                        <td>(C)Leonardo Bonucci</td>
-                        <td>CB</td>
-                        <td>35</td>
-                        <td>Italy</td>
-                    </tr>
-                    <tr>
-                        <td>24</td>
-                        <td>Daniele Rugani</td>
-                        <td>CB</td>
-                        <td>28</td>
-                        <td>Italy</td>
-                    </tr>
-                    <tr><td>____</td><td>___________________</td><td>______________</td><td>____</td><td>__________</td></tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Manuel Locatelli</td>
-                        <td>CM/CDM</td>
-                        <td>25</td>
-                        <td>Italy</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>Paul Pogba</td>
-                        <td>CM/CDM/CAM/LM</td>
-                        <td>30</td>
-                        <td>France</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td>Juan Cuadrado</td>
-                        <td>RW/RM/RWB/RB</td>
-                        <td>34</td>
-                        <td>Colombia</td>
-                    </tr>
-                    <tr>
-                        <td>17</td>
-                        <td>Filip Kostic</td>
-                        <td>LM/LWB/LW</td>
-                        <td>30</td>
-                        <td>Serbia</td>
-                    </tr>
-                    <tr>
-                        <td>20</td>
-                        <td>Fabio Miretti</td>
-                        <td>CM</td>
-                        <td>19</td>
-                        <td>Italy</td>
-                    </tr>
-                    <tr>
-                        <td>25</td>
-                        <td>Adrien Rabiot</td>
-                        <td>CM/VM</td>
-                        <td>28</td>
-                        <td>France</td>
-                    </tr>
-                    <tr>
-                        <td>32</td>
-                        <td>Leandro Paredes</td>
-                        <td>CM/CDM</td>
-                        <td>28</td>
-                        <td>Argentina</td>
-                    </tr>
-                    <tr>
-                        <td>44</td>
-                        <td>Nicolo Fagioli</td>
-                        <td>CM/CAM/CDM</td>
-                        <td>22</td>
-                        <td>Italy</td>
-                    </tr>
-                    <tr><td>____</td><td>___________________</td><td>______________</td><td>____</td><td>__________</td></tr>
-                    <tr>
-                        <td>7</td>
-                        <td>Federico Chiesa</td>
-                        <td>RW/LW/RM/LM</td>
-                        <td>25</td>
-                        <td>Italy</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>Dusan Vlahovic</td>
-                        <td>CF/ST</td>
-                        <td>23</td>
-                        <td>Serbia</td>
-                    </tr>
-                    <tr>
-                        <td>14</td>
-                        <td>Arkadiuz Milik</td>
-                        <td>CF/ST</td>
-                        <td>29</td>
-                        <td>Poland</td>
-                    </tr>
-                    <tr>
-                        <td>18</td>
-                        <td>Moise Kean</td>
-                        <td>CF/ST/LW</td>
-                        <td>23</td>
-                        <td>Italy</td>
-                    </tr>
-                    <tr>
-                        <td>21</td>
-                        <td>Kaio Jorge</td>
-                        <td>ST</td>
-                        <td>21</td>
-                        <td>Brazil</td>
-                    </tr>
-                    <tr>
-                        <td>22</td>
-                        <td>Angel Di Maria</td>
-                        <td>RW/LW/CAM/CF/RM</td>
-                        <td>35</td>
-                        <td>Argentina</td>
-                    </tr>
-                    <tr>
-                        <td>30</td>
-                        <td>Matias Soule</td>
-                        <td>RW</td>
-                        <td>19</td>
-                        <td>Argentina</td>
-                    </tr>
-                    <tr>
-                        <td>43</td>
-                        <td>Samuel Iling-Junior</td>
-                        <td>LW/LM</td>
-                        <td>19</td>
-                        <td>England</td>
-                    </tr>
-                    
-                </tbody>
-                <tfoot>
-                     <tr><td>____</td><td>___________________</td><td>______________</td><td>____</td><td>__________</td></tr>
-                     <tr>
-                        <td>-</td>
-                        <td>Max Allegri</td>
-                        <td>Manager</td>
-                        <td>55</td>
-                        <td>Italy</td>
-                     </tr>
-                     <tr>
-                        <td>-</td>
-                        <td>Marco Landucci</td>
-                        <td>Assistant Manager</td>
-                        <td>59</td>
-                        <td>Italy</td>
-                     </tr>
-                </tfoot>
-
-            </table>
+            <div class="responsiveTable">
+                <table class="squadTable">
+                    <thead>
+                        <tr>
+                            <th>Number</th>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Age</th>
+                            <th>Nationality</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>____</td><td>___________________</td><td>______________</td><td>____</td><td>__________</td></tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Wojciech Szczesny</td>
+                            <td>GK</td>
+                            <td>32</td>
+                            <td>Poland</td>
+                        </tr>
+                        <tr>
+                            <td>36</td>
+                            <td>Mattia Perin</td>
+                            <td>GK</td>
+                            <td>30</td>
+                            <td>Italy</td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td>Carlo Pinsoglio</td>
+                            <td>GK</td>
+                            <td>33</td>
+                            <td>Italy</td>
+                        </tr>
+                        <tr><td>____</td><td>___________________</td><td>______________</td><td>____</td><td>__________</td></tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Mattia De Sciglio</td>
+                            <td>RB/LB</td>
+                            <td>30</td>
+                            <td>Italy</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Gleison Bremer</td>
+                            <td>CB</td>
+                            <td>26</td>
+                            <td>Brazil</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>(VC)Danilo Luiz da Silva</td>
+                            <td>CB/RB/LB</td>
+                            <td>31</td>
+                            <td>Brazil</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Alex Sandro</td>
+                            <td>LB/CB</td>
+                            <td>32</td>
+                            <td>Brazil</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>Federico Gatti</td>
+                            <td>CB</td>
+                            <td>24</td>
+                            <td>Italy</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>(C)Leonardo Bonucci</td>
+                            <td>CB</td>
+                            <td>35</td>
+                            <td>Italy</td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>Daniele Rugani</td>
+                            <td>CB</td>
+                            <td>28</td>
+                            <td>Italy</td>
+                        </tr>
+                        <tr><td>____</td><td>___________________</td><td>______________</td><td>____</td><td>__________</td></tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Manuel Locatelli</td>
+                            <td>CM/CDM</td>
+                            <td>25</td>
+                            <td>Italy</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Paul Pogba</td>
+                            <td>CM/CDM/CAM/LM</td>
+                            <td>30</td>
+                            <td>France</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Juan Cuadrado</td>
+                            <td>RW/RM/RWB/RB</td>
+                            <td>34</td>
+                            <td>Colombia</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>Filip Kostic</td>
+                            <td>LM/LWB/LW</td>
+                            <td>30</td>
+                            <td>Serbia</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>Fabio Miretti</td>
+                            <td>CM</td>
+                            <td>19</td>
+                            <td>Italy</td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>Adrien Rabiot</td>
+                            <td>CM/VM</td>
+                            <td>28</td>
+                            <td>France</td>
+                        </tr>
+                        <tr>
+                            <td>32</td>
+                            <td>Leandro Paredes</td>
+                            <td>CM/CDM</td>
+                            <td>28</td>
+                            <td>Argentina</td>
+                        </tr>
+                        <tr>
+                            <td>44</td>
+                            <td>Nicolo Fagioli</td>
+                            <td>CM/CAM/CDM</td>
+                            <td>22</td>
+                            <td>Italy</td>
+                        </tr>
+                        <tr><td>____</td><td>___________________</td><td>______________</td><td>____</td><td>__________</td></tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Federico Chiesa</td>
+                            <td>RW/LW/RM/LM</td>
+                            <td>25</td>
+                            <td>Italy</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Dusan Vlahovic</td>
+                            <td>CF/ST</td>
+                            <td>23</td>
+                            <td>Serbia</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>Arkadiuz Milik</td>
+                            <td>CF/ST</td>
+                            <td>29</td>
+                            <td>Poland</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>Moise Kean</td>
+                            <td>CF/ST/LW</td>
+                            <td>23</td>
+                            <td>Italy</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>Kaio Jorge</td>
+                            <td>ST</td>
+                            <td>21</td>
+                            <td>Brazil</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>Angel Di Maria</td>
+                            <td>RW/LW/CAM/CF/RM</td>
+                            <td>35</td>
+                            <td>Argentina</td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>Matias Soule</td>
+                            <td>RW</td>
+                            <td>19</td>
+                            <td>Argentina</td>
+                        </tr>
+                        <tr>
+                            <td>43</td>
+                            <td>Samuel Iling-Junior</td>
+                            <td>LW/LM</td>
+                            <td>19</td>
+                            <td>England</td>
+                        </tr>
+                        
+                    </tbody>
+                    <tfoot>
+                         <tr><td>____</td><td>___________________</td><td>______________</td><td>____</td><td>__________</td></tr>
+                         <tr>
+                            <td>-</td>
+                            <td>Max Allegri</td>
+                            <td>Manager</td>
+                            <td>55</td>
+                            <td>Italy</td>
+                         </tr>
+                         <tr>
+                            <td>-</td>
+                            <td>Marco Landucci</td>
+                            <td>Assistant Manager</td>
+                            <td>59</td>
+                            <td>Italy</td>
+                         </tr>
+                    </tfoot>
+    
+                </table>
+            </div>
+            
         </main>
 
 
