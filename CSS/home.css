@@ -370,7 +370,7 @@ tr:nth-child(even){
     box-sizing: border-box;
 }
 
-#formInputDate {
+#birthdate {
     cursor: pointer;
 }
 
