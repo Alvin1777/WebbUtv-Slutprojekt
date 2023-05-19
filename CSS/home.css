@@ -280,19 +280,16 @@ nav li:nth-last-of-type(5) a:hover, .hero a:hover {
 
 .block-parent{
     padding: 2rem;
-    border: aqua solid 3px;
 }
 
 .block{
     display: inline-block;
     padding: 1rem;
-    border: aqua solid 3px;
 }
 
 #block-right{
     position: absolute;
     right: 5vw;
-    border: aqua solid 3px;
 }
 
 #block-left{
@@ -301,7 +298,6 @@ nav li:nth-last-of-type(5) a:hover, .hero a:hover {
     font-size: 1.5em;
     color: white;
     margin-left: 3vw;
-    border: aqua solid 3px;
 }
 
 #JTCPhoto{
@@ -317,6 +313,10 @@ nav li:nth-last-of-type(5) a:hover, .hero a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#teamPhoto{
+    width: 85%;
 }
 
 .squadTable{
@@ -462,7 +462,7 @@ tr:nth-child(even){
 
 /* Media */
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 950px){
 
     .toggleMenu {
         color:red;
@@ -523,6 +523,13 @@ tr:nth-child(even){
     }
 
 
+
+    
+    #teamPhoto{
+        width: 100%;
+    }
+
+
     /* SquadTable */
     .squadTable{
         overflow-x: auto;
@@ -561,7 +568,6 @@ tr:nth-child(even){
         position: absolute;
         right: 5vw;
         width: 10%;
-        border: aqua solid 1px;
     }
 
     #block-left{
@@ -608,7 +614,7 @@ tr:nth-child(even){
     }
 
     .footer-link{
-        font-size: 1.5em;
+        font-size: 0.75em;
     }
 
     .copyrightText {

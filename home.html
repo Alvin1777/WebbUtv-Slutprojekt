@@ -1,67 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="./CSS/home.css">
-        <link rel="shortcut icon" href="../WebbUtv-Slutprojekt/images/JuveLogoWhite.png">
-        <title>Juventus</title>
-        <script src="https://kit.fontawesome.com/83a377e60c.js" crossorigin="anonymous"></script>
-        <script src="main.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    </head>
-    
+  <head>
+    <link rel="stylesheet" href="./CSS/home.css" />
+    <link
+      rel="shortcut icon"
+      href="../WebbUtv-Slutprojekt/images/JuveLogoWhite.png"
+    />
+    <title>Juventus</title>
+    <script
+      src="https://kit.fontawesome.com/83a377e60c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../WebbUtv-Slutprojekt/JavaScript/main.js"></script>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  </head>
 
-    <body>
+  <body>
+    <div class="transition transition2 is-active">
+      <img
+        id="loading-screen"
+        src="./images/JuveLoadingScreen.png"
+        alt="Juventus Logo Loading Screen"
+      />
+    </div>
 
-        <div class="transition transition2 is-active">
-            <img id="loading-screen" src="./images/JuveLoadingScreen.png" alt="Juventus Logo Loading Screen">
-        </div>
+    <header class="row container">
+      <a href="#" class="logo row">
+        <img src="./images/JuveLogoWhite.png" alt="Juve Logo" />
+        <h1 class="white-text">Juventus</h1>
+      </a>
+      <div class="toggleMenu" onclick="toggleMenu();"></div>
+      <nav class="navigation row">
+        <ul class="row">
+          <li>
+            <a class="menuRow" href="home.html"
+              ><i class="fa-solid fa-house"></i>Home</a
+            >
+          </li>
+          <li>
+            <a class="menuRow" href="theTeam.html"
+              ><i class="fa-solid fa-people-group"></i>The Team</a
+            >
+          </li>
+          <li>
+            <a class="menuRow" href="theClub.html"
+              ><i class="fa-regular fa-futbol"></i>The Club</a
+            >
+          </li>
+          <li>
+            <a class="menuRow" href="theFans.html"
+              ><i class="fa-solid fa-bullhorn"></i>The Fans</a
+            >
+          </li>
+          <li>
+            <a id="accountLink" class="menuRow" href="createAccount.html"
+              ><i class="fa-brands fa-mandalorian"></i>Your Account</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-        <header class="row container">
-            <a href="#" class="logo row">
-                <img src="./images/JuveLogoWhite.png" alt="Juve Logo">
-                <h1 class="white-text">Juventus</h1>
-            </a>
-            <div class="toggleMenu" onclick="toggleMenu();"></div>
-            <nav class="navigation row">
-                <ul class="row">
-                    <li><a class="menuRow" href="home.html"><i class="fa-solid fa-house"></i>Home</a></li>
-                    <li ><a class="menuRow" href="theTeam.html"><i class="fa-solid fa-people-group"></i>The Team</a></li>
-                    <li ><a class="menuRow" href="theClub.html"><i class="fa-regular fa-futbol"></i>The Club</a></li>
-                    <li><a class="menuRow" href="theFans.html"><i class="fa-solid fa-bullhorn"></i>The Fans</a></li>
-                    <li><a id="accountLink" class="menuRow" href="createAccount.html"><i class="fa-brands fa-mandalorian"></i>Your Account</a></li>
-                </ul>
-            </nav>
-        </header>
+    <main class="hero row container">
+      <section class="white-text">
+        <h1>Welcome To Juventus Football Club</h1>
+        <p id="heroText">
+          <i class="fa-solid fa-trophy"></i>-36-time Serie A champions
+        </p>
+        <p id="heroText">
+          <i class="fa-solid fa-medal"></i>-14-time Coppa Italia winners
+        </p>
+        <p id="heroText">
+          <i class="fa-solid fa-trophy"></i>-2-time Champions-league champions
+        </p>
+        <p id="heroText">
+          <i class="fa-solid fa-trophy"></i>-3-time Europa-league winners
+        </p>
+        <p id="heroText"><i class="fa-solid fa-award"></i>-And many more!</p>
+        <a href="createAccount.html" class="hero-btn">Become a fan now!</a>
+      </section>
+      <div class="row">
+        <img
+          src="./images/JuveLogoTransparent.png"
+          alt="Juventus Welcome Photo"
+        />
+      </div>
+    </main>
 
-        <main class="hero row container">
-            <section class="white-text">
-                <h1>Welcome To Juventus Football Club</h1>
-                <p id="heroText"><i class="fa-solid fa-trophy"></i>-36-time Serie A champions</p>
-                <p id="heroText"><i class="fa-solid fa-medal"></i>-14-time Coppa Italia winners</p>
-                <p id="heroText"><i class="fa-solid fa-trophy"></i>-2-time Champions-league champions</p>
-                <p id="heroText"><i class="fa-solid fa-trophy"></i>-3-time Europa-league winners</p>
-                <p id="heroText"><i class="fa-solid fa-award"></i>-And many more!</p>
-                <a href="createAccount.html" class="hero-btn">Become a fan now!</a>
-            </section>
-            <div class="row">
-                <img src="./images/JuveLogoTransparent.png" alt="Juventus Welcome Photo">
-            </div>
-        </main>
-
-        <footer>
-            <ul id="footer-list">
-                <li><a class="footer-link" href="https://www.instagram.com/juventus/"><i class="fa-brands fa-instagram fa-3x"></i></a></li>
-                <li><a class="footer-link" href="https://www.facebook.com/Juventus/?locale=sv_SE"><i class="fa-brands fa-facebook fa-3x"></i></a></li>
-                <li><a class="footer-link" href="https://www.juventus.com/en/"><i class="fa-solid fa-globe fa-3x"></i></a></li>
-                <li><a class="footer-link" href="https://store.juventus.com/en/?utm_source=juventus.com&utm_medium=internal&utm_campaign=jstore-internal&utm_content=menu">
-                <i class="fa-solid fa-basket-shopping fa-3x"></i></a></li>
-            </ul>
-            <p class="copyrightText">Juventus F.C Association @ 2023</p>
-        </footer>
-    
-    </body>
-
-
+    <footer>
+      <ul id="footer-list">
+        <li>
+          <a class="footer-link" href="https://www.instagram.com/juventus/"
+            ><i class="fa-brands fa-instagram fa-3x"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="footer-link"
+            href="https://www.facebook.com/Juventus/?locale=sv_SE"
+            ><i class="fa-brands fa-facebook fa-3x"></i
+          ></a>
+        </li>
+        <li>
+          <a class="footer-link" href="https://www.juventus.com/en/"
+            ><i class="fa-solid fa-globe fa-3x"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="footer-link"
+            href="https://store.juventus.com/en/?utm_source=juventus.com&utm_medium=internal&utm_campaign=jstore-internal&utm_content=menu"
+          >
+            <i class="fa-solid fa-basket-shopping fa-3x"></i
+          ></a>
+        </li>
+      </ul>
+      <p class="copyrightText">Juventus F.C Association @ 2023</p>
+    </footer>
+  </body>
 </html>
