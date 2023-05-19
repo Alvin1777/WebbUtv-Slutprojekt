@@ -1,86 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="./CSS/home.css">
-        <link rel="shortcut icon" href="../WebbUtv-Slutprojekt/images/JuveLogoWhite.png">
-        <title>Juventus</title>
-        <script src="https://kit.fontawesome.com/83a377e60c.js" crossorigin="anonymous"></script>
-        <script src="../WebbUtv-Slutprojekt/JavaScript/main.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    </head>
-    
+  <head>
+    <link rel="stylesheet" href="./CSS/home.css" />
+    <link
+      rel="shortcut icon"
+      href="../WebbUtv-Slutprojekt/images/JuveLogoWhite.png"
+    />
+    <title>Juventus</title>
+    <script
+      src="https://kit.fontawesome.com/83a377e60c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../WebbUtv-Slutprojekt/JavaScript/main.js"></script>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  </head>
 
-    <body>
+  <body>
+    <div class="transition transition3 is-active">
+      <img
+        id="loading-screen"
+        src="./images/JuveLoadingScreen.png"
+        alt="Juventus Logo Loading Screen"
+      />
+    </div>
 
-        <div class="transition transition3 is-active">
-            <img id="loading-screen" src="./images/JuveLoadingScreen.png" alt="Juventus Logo Loading Screen">
+    <header class="row container">
+      <a href="#" class="logo row">
+        <img src="./images/JuveLogoWhite.png" alt="Juve Logo" />
+        <h1 class="white-text">Juventus</h1>
+      </a>
+      <div class="toggleMenu" onclick="toggleMenu();"></div>
+      <nav class="navigation row">
+        <ul class="row">
+          <li>
+            <a class="menuRow" href="home.html"
+              ><i class="fa-solid fa-house"></i>Home</a
+            >
+          </li>
+          <li>
+            <a class="menuRow" href="theTeam.html"
+              ><i class="fa-solid fa-people-group"></i>The Team</a
+            >
+          </li>
+          <li>
+            <a class="menuRow" href="theClub.html"
+              ><i class="fa-regular fa-futbol"></i>The Club</a
+            >
+          </li>
+          <li>
+            <a class="menuRow" href="theFans.html"
+              ><i class="fa-solid fa-bullhorn"></i>The Fans</a
+            >
+          </li>
+          <li>
+            <a id="accountLink" class="menuRow" href="createAccount.html"
+              ><i class="fa-brands fa-mandalorian"></i>Your Account</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="block-parent">
+        <div id="block-left" class="block">
+          <h2>Allianz Stadium</h2>
+          <p>
+            The Allianz Stadium is the home-arena of Juventus Football Club.
+          </p>
+          <img
+            id="AllianzPhoto"
+            src="./images/AllianzStadium.jpg"
+            alt="Photo of the Allianz Stadium"
+          />
         </div>
-        
-        <header class="row container">
-            <a href="#" class="logo row">
-                <img src="./images/JuveLogoWhite.png" alt="Juve Logo">
-                <h1 class="white-text">Juventus</h1>
-            </a>
-            <div class="toggleMenu" onclick="toggleMenu();"></div>
-            <nav class="navigation row">
-                <ul class="row">
-                    <li><a class="menuRow" href="home.html"><i class="fa-solid fa-house"></i>Home</a></li>
-                    <li ><a class="menuRow" href="theTeam.html"><i class="fa-solid fa-people-group"></i>The Team</a></li>
-                    <li ><a class="menuRow" href="theClub.html"><i class="fa-regular fa-futbol"></i>The Club</a></li>
-                    <li><a class="menuRow" href="theFans.html"><i class="fa-solid fa-bullhorn"></i>The Fans</a></li>
-                    <li><a id="accountLink" class="menuRow" href="createAccount.html"><i class="fa-brands fa-mandalorian"></i>Your Account</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <main>
-            <section class="block-parent">
-                <div id="block-left" class="block">
-                    <h2>Allianz Stadium</h2>
-                    <p>
-                        The Allianz Stadium is the home-arena of Juventus Football Club. 
-                    </p>  
-                    <img id="AllianzPhoto" src="./images/AllianzStadium.jpg" alt="Photo of the Allianz Stadium">
-                </div>
+        <div id="block-right" class="block">
+          <iframe
+            class="google-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.7017508433087!2d7.638318660828815!3d45.11064336678652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886c17f7814e37%3A0xe3be8084a88d8da5!2sJuventus%20Stadium!5e0!3m2!1ssv!2sse!4v1683804062396!5m2!1ssv!2sse"
+            width="500"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
 
-                <div id="block-right" class="block">
-                    <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.7017508433087!2d7.638318660828815!3d45.11064336678652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886c17f7814e37%3A0xe3be8084a88d8da5!2sJuventus%20Stadium!5e0!3m2!1ssv!2sse!4v1683804062396!5m2!1ssv!2sse" 
-                    width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </section>
+      <section class="block-parent">
+        <div id="block-left" class="block">
+          <h2>Juventus Training Center Continassa</h2>
+          <p>
+            Juventus Training Center Continassa (JTC) is where our players train
+            and work.
+          </p>
+          <img
+            id="JTCPhoto"
+            class="animatedImage"
+            src="./images/JTC.jpg"
+            alt="Photo of Juventus Training Center"
+          />
+        </div>
 
-            <section class="block-parent">
-                <div id="block-left" class="block">
-                    <h2>Juventus Training Center Continassa</h2>
-                    <p>
-                        Juventus Training Center Continassa (JTC) is where our players train and work.
-                    </p>  
-                    <img id="JTCPhoto" class="animatedImage" src="./images/JTC.jpg" alt="Photo of Juventus Training Center">
-                </div>
+        <div id="block-right" class="block">
+          <iframe
+            class="google-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5631.54703431439!2d7.630893502441959!3d45.110658945516995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886dc3b59ac133%3A0x86aae7cd36e7e9ac!2sJuventus%20Training%20Center%20Continassa!5e0!3m2!1ssv!2sse!4v1683805829765!5m2!1ssv!2sse"
+            width="500"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
 
-                <div id="block-right" class="block">
-                    <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5631.54703431439!2d7.630893502441959!3d45.110658945516995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886dc3b59ac133%3A0x86aae7cd36e7e9ac!2sJuventus%20Training%20Center%20Continassa!5e0!3m2!1ssv!2sse!4v1683805829765!5m2!1ssv!2sse" 
-                    width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </section>
-
-        </main>
-
-
-        <footer>
-            <ul id="footer-list">
-                <li><a class="footer-link" href="https://www.instagram.com/juventus/"><i class="fa-brands fa-instagram fa-3x"></i></a></li>
-                <li><a class="footer-link" href="https://www.facebook.com/Juventus/?locale=sv_SE"><i class="fa-brands fa-facebook fa-3x"></i></a></li>
-                <li><a class="footer-link" href="https://www.juventus.com/en/"><i class="fa-solid fa-globe fa-3x"></i></a></li>
-                <li><a class="footer-link" href="https://store.juventus.com/en/?utm_source=juventus.com&utm_medium=internal&utm_campaign=jstore-internal&utm_content=menu">
-                <i class="fa-solid fa-basket-shopping fa-3x"></i></a></li>
-            </ul>
-            <p class="copyrightText">Juventus F.C Association @ 2023</p>
-        </footer>
-    
-    </body>
-
-
+    <footer>
+      <ul id="footer-list">
+        <li>
+          <a class="footer-link" href="https://www.instagram.com/juventus/"
+            ><i class="fa-brands fa-instagram fa-3x"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="footer-link"
+            href="https://www.facebook.com/Juventus/?locale=sv_SE"
+            ><i class="fa-brands fa-facebook fa-3x"></i
+          ></a>
+        </li>
+        <li>
+          <a class="footer-link" href="https://www.juventus.com/en/"
+            ><i class="fa-solid fa-globe fa-3x"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="footer-link"
+            href="https://store.juventus.com/en/?utm_source=juventus.com&utm_medium=internal&utm_campaign=jstore-internal&utm_content=menu"
+          >
+            <i class="fa-solid fa-basket-shopping fa-3x"></i
+          ></a>
+        </li>
+      </ul>
+      <p class="copyrightText">Juventus F.C Association @ 2023</p>
+    </footer>
+  </body>
 </html>

@@ -1,99 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="./CSS/home.css">
-        <link rel="shortcut icon" href="../WebbUtv-Slutprojekt/images/JuveLogoWhite.png">
-        <title>Juventus</title>
-        <script src="https://kit.fontawesome.com/83a377e60c.js" crossorigin="anonymous"></script>
-        <script src="../WebbUtv-Slutprojekt/JavaScript/main.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    </head>
-    
+  <head>
+    <link rel="stylesheet" href="./CSS/home.css" />
+    <link
+      rel="shortcut icon"
+      href="../WebbUtv-Slutprojekt/images/JuveLogoWhite.png"
+    />
+    <title>Juventus</title>
+    <script
+      src="https://kit.fontawesome.com/83a377e60c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../WebbUtv-Slutprojekt/JavaScript/main.js"></script>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  </head>
 
-    <body>
+  <body>
+    <div class="transition transition2 is-active">
+      <img
+        id="loading-screen"
+        src="./images/JuveLoadingScreen.png"
+        alt="Juventus Logo Loading Screen"
+      />
+    </div>
 
-        <div class="transition transition2 is-active">
-            <img id="loading-screen" src="./images/JuveLoadingScreen.png" alt="Juventus Logo Loading Screen">
+    <header class="row container">
+      <a href="#" class="logo row">
+        <img src="./images/JuveLogoWhite.png" alt="Juve Logo" />
+        <h1 class="white-text">Juventus</h1>
+      </a>
+      <div class="toggleMenu" onclick="toggleMenu();"></div>
+      <nav class="navigation row">
+        <ul class="row">
+          <li>
+            <a class="menuRow" href="home.html"
+              ><i class="fa-solid fa-house"></i>Home</a
+            >
+          </li>
+          <li>
+            <a class="menuRow" href="theTeam.html"
+              ><i class="fa-solid fa-people-group"></i>The Team</a
+            >
+          </li>
+          <li>
+            <a class="menuRow" href="theClub.html"
+              ><i class="fa-regular fa-futbol"></i>The Club</a
+            >
+          </li>
+          <li>
+            <a class="menuRow" href="theFans.html"
+              ><i class="fa-solid fa-bullhorn"></i>The Fans</a
+            >
+          </li>
+          <li>
+            <a id="accountLink" class="menuRow" href="createAccount.html"
+              ><i class="fa-brands fa-mandalorian"></i>Your Account</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="fanpage-text">Join the Juventus fan-community!</h1>
+      <section class="fanpage-text">
+        <h2>Lorem Ipsum</h2>
+        <p id="fanpage-loremIpsum">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at enim
+          eget elit fringilla tincidunt. Morbi at urna sem. Fusce vel odio vel
+          magna iaculis mollis eget vel lorem. Cras imperdiet enim imperdiet
+          orci mollis, nec suscipit arcu sodales. Donec iaculis, augue fermentum
+          suscipit maximus, quam orci laoreet neque, eu consectetur risus lectus
+          a elit. Pellentesque consectetur pharetra luctus. Maecenas lorem
+          lacus, congue eu augue in, lacinia rhoncus augue. Nullam vestibulum,
+          dui ac sodales faucibus, odio ligula tincidunt elit, a commodo est est
+          vitae ante. Nunc odio erat, consectetur eu rutrum ac, tempor vitae
+          nisl. Donec fringilla euismod egestas. Class aptent taciti sociosqu ad
+          litora torquent per conubia nostra, per inceptos himenaeos. Praesent
+          ornare nisi a orci euismod efficitur eu id augue. Praesent sit amet
+          ante tempor, lacinia ligula eu, fringilla dui. Sed fermentum tellus ut
+          dui pellentesque, non maximus mauris consectetur. Fusce odio mauris,
+          interdum et sapien at, auctor facilisis eros. Aliquam sagittis massa
+          eros, congue pellentesque lorem egestas sed. Suspendisse id suscipit
+          ipsum, vitae tincidunt felis. Maecenas libero lacus, facilisis ut
+          lectus ut, molestie rhoncus lorem. In congue, nisi at accumsan
+          vulputate, quam lorem iaculis mauris, non suscipit metus tortor a
+          nisi. Aenean sagittis commodo lacus, eu vestibulum magna condimentum
+          a. Sed faucibus urna lorem, id feugiat nisl mollis eu. Aenean placerat
+          augue non purus porta, id blandit mi consequat. Nulla vulputate
+          dapibus lectus, ac mattis ex. Nulla at dapibus nulla, ac porttitor
+          eros. Mauris quis vehicula ipsum. Nulla cursus ligula sed volutpat
+          ultrices. Quisque mattis blandit tempus.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="fanpage-text">Do you have any questions?</h2>
+        <h3 class="fanpage-text">Contact us!</h3>
+        <div class="accountForm">
+          <form action="Contact">
+            <br />
+            <label for="Email">Email:</label><br />
+            <input
+              id="Email"
+              class="formInput"
+              type="email"
+              placeholder="Email"
+              required
+            />
+            <br />
+            <label for="subject">Subject</label><br />
+            <input
+              id="subject"
+              class="formInput"
+              type="text"
+              placeholder="Subject"
+              required
+            />
+            <br />
+            <label for="question">What's your qustion?</label><br />
+            <input
+              id="question"
+              class="formInput"
+              type="text"
+              placeholder="Write your question in full here"
+              required
+            />
+            <br />
+            <input class="formInputButton" type="submit" value="Send" />
+          </form>
+          <p>We will contact you as soon as possible!</p>
         </div>
+      </section>
+    </main>
 
-        <header class="row container">
-            <a href="#" class="logo row">
-                <img src="./images/JuveLogoWhite.png" alt="Juve Logo">
-                <h1 class="white-text">Juventus</h1>
-            </a>
-            <div class="toggleMenu" onclick="toggleMenu();"></div>
-            <nav class="navigation row">
-                <ul class="row">
-                    <li><a class="menuRow" href="home.html"><i class="fa-solid fa-house"></i>Home</a></li>
-                    <li ><a class="menuRow" href="theTeam.html"><i class="fa-solid fa-people-group"></i>The Team</a></li>
-                    <li ><a class="menuRow" href="theClub.html"><i class="fa-regular fa-futbol"></i>The Club</a></li>
-                    <li><a class="menuRow" href="theFans.html"><i class="fa-solid fa-bullhorn"></i>The Fans</a></li>
-                    <li><a id="accountLink" class="menuRow" href="createAccount.html"><i class="fa-brands fa-mandalorian"></i>Your Account</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <h1 class="fanpage-text" >Join the Juventus fan-community!</h1>
-            <section class="fanpage-text">
-                <h2>Lorem Ipsum</h2>
-                <p id="fanpage-loremIpsum" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Nam at enim eget elit fringilla tincidunt. Morbi at urna sem. Fusce vel odio vel magna iaculis mollis eget vel lorem. 
-                    Cras imperdiet enim imperdiet orci mollis, nec suscipit arcu sodales. 
-                    Donec iaculis, augue fermentum suscipit maximus, quam orci laoreet neque, eu consectetur risus lectus a elit. 
-                    Pellentesque consectetur pharetra luctus. Maecenas lorem lacus, congue eu augue in, lacinia rhoncus augue. 
-                    Nullam vestibulum, dui ac sodales faucibus, odio ligula tincidunt elit, a commodo est est vitae ante. 
-                    Nunc odio erat, consectetur eu rutrum ac, tempor vitae nisl. Donec fringilla euismod egestas. 
-                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-                    Praesent ornare nisi a orci euismod efficitur eu id augue. Praesent sit amet ante tempor, lacinia ligula eu, fringilla dui. 
-                    Sed fermentum tellus ut dui pellentesque, non maximus mauris consectetur. Fusce odio mauris, interdum et sapien at, auctor facilisis eros.
-
-                    Aliquam sagittis massa eros, congue pellentesque lorem egestas sed. Suspendisse id suscipit ipsum, vitae tincidunt felis. 
-                    Maecenas libero lacus, facilisis ut lectus ut, molestie rhoncus lorem. 
-                    In congue, nisi at accumsan vulputate, quam lorem iaculis mauris, non suscipit metus tortor a nisi. Aenean sagittis commodo lacus, eu vestibulum magna condimentum a. 
-                    Sed faucibus urna lorem, id feugiat nisl mollis eu. Aenean placerat augue non purus porta, id blandit mi consequat. Nulla vulputate dapibus lectus, ac mattis ex. 
-                    Nulla at dapibus nulla, ac porttitor eros. Mauris quis vehicula ipsum. Nulla cursus ligula sed volutpat ultrices. Quisque mattis blandit tempus.
-                </p>
-            </section>
-
-
-            <section>
-                <h2 class="fanpage-text">Do you have any questions?</h2>
-                <h3 class="fanpage-text">Contact us!</h3>
-                <div class="accountForm">
-                    <form action="Contact">
-                        <br>
-                        <label for="Email">Email:</label><br>
-                        <input id="Email" class="formInput" type="email" placeholder="Email" required>
-                        <br>
-                        <label for="subject">Subject</label><br>
-                        <input id="subject" class="formInput" type="text" placeholder="Subject" required>
-                        <br>
-                        <label for="question">What's your qustion?</label><br>
-                        <input id="question" class="formInput" type="text" placeholder="Write your question in full here" required>
-                        <br>
-                        <input class="formInputButton" type="submit" value="Send">
-                    </form>
-                    <p>We will contact you as soon as possible!</p>
-                </div>
-
-            </section>
-        </main>
-
-        <footer>
-            <ul id="footer-list">
-                <li><a class="footer-link" href="https://www.instagram.com/juventus/"><i class="fa-brands fa-instagram fa-3x"></i></a></li>
-                <li><a class="footer-link" href="https://www.facebook.com/Juventus/?locale=sv_SE"><i class="fa-brands fa-facebook fa-3x"></i></a></li>
-                <li><a class="footer-link" href="https://www.juventus.com/en/"><i class="fa-solid fa-globe fa-3x"></i></a></li>
-                <li><a class="footer-link" href="https://store.juventus.com/en/?utm_source=juventus.com&utm_medium=internal&utm_campaign=jstore-internal&utm_content=menu">
-                <i class="fa-solid fa-basket-shopping fa-3x"></i></a></li>
-            </ul>
-            <p class="copyrightText">Juventus F.C Association @ 2023</p>
-        </footer>
-    
-    </body>
-
-
+    <footer>
+      <ul id="footer-list">
+        <li>
+          <a class="footer-link" href="https://www.instagram.com/juventus/"
+            ><i class="fa-brands fa-instagram fa-3x"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="footer-link"
+            href="https://www.facebook.com/Juventus/?locale=sv_SE"
+            ><i class="fa-brands fa-facebook fa-3x"></i
+          ></a>
+        </li>
+        <li>
+          <a class="footer-link" href="https://www.juventus.com/en/"
+            ><i class="fa-solid fa-globe fa-3x"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="footer-link"
+            href="https://store.juventus.com/en/?utm_source=juventus.com&utm_medium=internal&utm_campaign=jstore-internal&utm_content=menu"
+          >
+            <i class="fa-solid fa-basket-shopping fa-3x"></i
+          ></a>
+        </li>
+      </ul>
+      <p class="copyrightText">Juventus F.C Association @ 2023</p>
+    </footer>
+  </body>
 </html>
